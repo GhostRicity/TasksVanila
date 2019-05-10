@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="title">Task's</title>
+    
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="main.css"</link>
+  </head>
+  <body onload="timeControler(); startTime(); retrunTaskOfDay()" >
+
+<div class="wrapper">
+
+    <header>
+      <div class="centerd">
+        <!-- full format time  -->
+        <div class="dates" id="fullDate"></div>
+      </div>
+    </header>
+
+<div class="content">
+  <!-- tabel of tasks -->
+  <h2>Todays Tasks: </h2>
+    <div class="taskTabel">
+      <table id="table" style="width:100%">
+        <tr>
+          <th>Time</th>
+          <th>Discription</th>
+        </tr>
+      </table>
+  </div>
+
+</div>
+
+<!-- sidebar -->
+<div class="main-sidebar">
+  <!-- clock format time -->
+<div class="clock" id="clockId"></div>
+<!-- change page <title>Home</title>-->
+   <div class="btn">
+     <input type="text" id="newText" placeholder="What a new tittle?"></input>
+     <button id="changeTitle" onclick="titleChange()">Change Title</button>
+   </div>
+   <!-- drop down for background color change -->
+   <div class="dropDown">
+     <p>Pick a bacground color</p>
+     <select id="background" onchange="backgroundChange(this);">
+       <option value="blue">Blue</option>
+       <option value="red">Red</option>
+       <option value="green">Green</option>
+       <option value="white">White</option>
+     </select>
+   </div>
+
+</div>
+
+  <footer class="main-footer">
+    <p class="centerd"> &copy; 2019 Eduards Birznieks</p>
+  </footer>
+
+</div>
+  </body>
+</html>
